@@ -27,6 +27,12 @@ async function formHandler(outputDivID) {
         </ul>
     </div>`;
     outputDiv.innerHTML = outputData;
+    localStorage.email = document.getElementById("emailForm1").value;
+    localStorage.address = document.getElementById("addressForm1").value;
+    localStorage.city = document.getElementById("cityForm1").value;
+    localStorage.zip = document.getElementById("zipForm1").value;
+    localStorage.country = document.getElementById("countryForm1").value;
+    localStorage.news = newsOut;
 }
 
 async function sha256(message) {
